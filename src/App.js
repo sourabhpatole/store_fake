@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import Products from "./components/Products";
 import Product from "./components/Product";
 import Cart from "./components/Cart";
+import Login from "./components/Login";
+import Register from "./components/Register";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<Product />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/" element={<Cart />} />
       </Routes>
     </>
